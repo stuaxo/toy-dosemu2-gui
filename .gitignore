@@ -1,0 +1,79 @@
+# Build directory
+/build/
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+/dosemu2-gui
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Dependency files
+*.d
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Meson specific
+.mesonconfig
+.mesondefines
+meson-logs/
+meson-private/
+_build/
+
+# Meson subproject directories
+# Keep .wrap files and packagefiles directory
+subprojects/packagecache/
+subprojects/*
+!subprojects/*.wrap
+!subprojects/packagefiles/
+subprojects/packagefiles/*
+!subprojects/packagefiles/*/
+subprojects/packagefiles/*/build/
+
+# Allow Git submodules to be tracked if needed
+# Remove the following lines if you want to track submodules with Git
+# Note: This assumes you're using Git submodules, not just cloned repositories
+
+# Compiled Python files (for any Python scripts)
+__pycache__/
+*.py[cod]
+
+# macOS specific
+.DS_Store
+
+# Backup files
+*.bak
