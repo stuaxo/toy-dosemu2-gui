@@ -1,5 +1,6 @@
 # Build directory
 /build/
+build/
 
 # Object files
 *.o
@@ -63,6 +64,14 @@ subprojects/*
 subprojects/packagefiles/*
 !subprojects/packagefiles/*/
 subprojects/packagefiles/*/build/
+
+# Handle nested subprojects with their own .wrap files
+# This ensures wrap-redirected dependencies work correctly
+!subprojects/libui/
+subprojects/libui/*
+!subprojects/libui/subprojects/
+subprojects/libui/subprojects/*
+!subprojects/libui/subprojects/*.wrap
 
 # Allow Git submodules to be tracked if needed
 # Remove the following lines if you want to track submodules with Git
